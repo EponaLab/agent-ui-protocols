@@ -2,11 +2,6 @@
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
-  experimental: {
-    serverActions: {
-      bodySizeLimit: '2mb',
-    },
-  },
+  transpilePackages: ['@copilotkit/react-ui', '@copilotkit/react-core'],
 }
-
 module.exports = nextConfig
